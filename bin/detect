@@ -30,4 +30,4 @@ fi
 #
 # Otherwise, `Python`.
 
-ls $BUILD_DIR/**/settings.py &> /dev/null && (grep -Fiq "django" $BUILD_DIR/requirements.txt) && echo Python/Django || echo Python
+ls $BUILD_DIR/**/**/settings.py &> /dev/null && (grep -Fiq "django" $BUILD_DIR/requirements.txt) && echo Python/Django || echo Python
